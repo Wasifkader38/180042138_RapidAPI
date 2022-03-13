@@ -1,0 +1,112 @@
+#home-header {
+  text-align: center;
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#dropdown{
+  padding: 1em;
+}
+
+#game-list {
+  padding: 1em;
+  padding-right: 2em;
+  min-width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 50fr));
+  grid-gap: 12px;
+
+  #game-container {
+    border: 1px solid rgb(185, 183, 183);
+    min-height: 200px;
+    border-radius: 0.5em;
+    background-color: #eee;
+    cursor: pointer;
+
+    &:hover {
+      border: 3px solid black;
+      background-color: rgb(90, 87, 87);
+    }
+
+    img {
+      width: 100%;
+      
+    }
+    #game-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+    #game-genre {
+      text-align: center;
+      font-size: 0.7em;
+    }
+
+    #game-platform {
+      text-align: center;
+
+      margin-top: 0.8em;
+      margin-left: 0.2em;
+    }
+  }
+}
+
+.game {
+    margin: 1em;
+    font-size: 1em;
+  #game-page-name {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  #game-page-image{
+      img{
+          width: 100%;
+      }
+  }
+
+  #game-page-description{
+      background: rgb(248, 246, 246);
+      padding-top: 1em;
+      padding-bottom: 0.2em;
+
+    p{
+        span{
+            font-weight: bold;
+        }
+        margin: 1em;
+        a{
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+  }
+
+  #requirement{
+      #main-p-id{
+        font-weight: bold;;
+      }
+      background: rgb(248, 246, 246);
+      padding-top: 1em;
+      padding-bottom: 0.2em;
+
+    p{
+        span{
+            font-weight: bold;
+        }
+        margin: 1em;
+        a{
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+  }
+}
